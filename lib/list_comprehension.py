@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 
 def return_evens(num_list):
-    pass
+    return [n for n in num_list if n%2 == 0]
 
 def make_exclamation(sentence_list):
-    pass
+    return [n + '!' for n in sentence_list]
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+even_numbers = return_evens(numbers)
+print("Even numbers:", even_numbers)
+
+sentences = ["Hello there", "Python is wow"]
+exclamations = make_exclamation(sentences)
+print("Exclamations:", exclamations)
